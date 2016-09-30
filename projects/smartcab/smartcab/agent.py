@@ -11,14 +11,11 @@ class LearningAgent(Agent):
         self.color = 'red'  # override color
         self.planner = RoutePlanner(self.env, self)  # simple route planner to get next_waypoint
         # TODO: Initialize any additional variables here
-        self.totalReward = 0
-        self.state = (None,None)
 
     def reset(self, destination=None):
         self.planner.route_to(destination)
         print "Total Reward",self.totalReward
         # TODO: Prepare for a new trip; reset any variables here, if required
-        self.totalReward = 0
 
     def update(self, t):
         # Gather inputs
@@ -33,7 +30,6 @@ class LearningAgent(Agent):
 
         # Execute action and get reward
         reward = self.env.act(self, action)
-        self.totalReward += reward
         # TODO: Learn policy based on state, action, reward
 
         print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
