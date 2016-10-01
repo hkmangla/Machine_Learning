@@ -1,6 +1,0 @@
-﻿QUESTION: Observe what you see with the agent's behavior as it takes random actions. Does the smartcab eventually make it to the destination? Are there any other interesting observations to note?
-ANSWER: Yes, smartcab make it to the destination after sometime. Yes, smartcab can go from leftmost side of city to rightmost side of city and topmost side of the city to bottom most side of the city in one step.
-
-
-
-
