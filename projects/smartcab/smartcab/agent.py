@@ -14,7 +14,6 @@ class LearningAgent(Agent):
 
     def reset(self, destination=None):
         self.planner.route_to(destination)
-        print "Total Reward",self.totalReward
         # TODO: Prepare for a new trip; reset any variables here, if required
 
     def update(self, t):
